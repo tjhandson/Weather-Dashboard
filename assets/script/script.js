@@ -50,9 +50,6 @@ function getLoctionURL(loaction) {
         if (searchHistory === null || !searchHistory.includes(returnedCity)) {
             searchHistory.push(returnedCity);
             localStorage.setItem('historyLocation', JSON.stringify(searchHistory));
-            getForecastWeather()
-            buttonArea.empty();
-            initPage()
         }
         getForecastWeather()
         buttonArea.empty();
